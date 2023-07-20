@@ -7,10 +7,9 @@ import { BiSearch } from "react-icons/bi";
 import { FaUserAlt } from "react-icons/fa";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { toast } from "react-hot-toast";
-
-import Button from "@/components/Button";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
+import Button from "@/components/common/Button";
 
 interface HeaderProps {
   children: React.ReactNode;
