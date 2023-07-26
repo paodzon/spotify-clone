@@ -1,6 +1,7 @@
 import getSongs from "@/actions/getSongs";
 import ListItem from "@/components/common/ListItem";
 import Header from "@/components/layout/Header/Header";
+import PageContent from "./components/PageContent";
 
 export const revalidate = 0;
 
@@ -25,7 +26,7 @@ export default async function Home() {
           </h1>
         </div>
         <div>
-          {songs.map((song) => <div>{song.title}</div>)}
+          <PageContent songs={songs}/>
         </div>
       </div>
     </div>
